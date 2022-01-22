@@ -316,7 +316,7 @@ header {
     color: #C7C7C7;
 }
 
-/* --------------------------------- */
+/* -------------LAYOUT SEM SIDEBAR----------------- */
 @media (max-width:935px) {
 
     .container-direito{
@@ -345,5 +345,53 @@ header {
         margin-top: 24px;
         
 }
+}
 
+/* -------------LAYOUT MOBILE----------------- */
+.barra-mobile{
+    display: none;
+}
+@media (max-width:614px) {
+
+    .container-stories{
+        margin-top: 53px;
+        background-color: #FAFAFA;
+    }
+
+    .container-postagens{
+        margin-top: -1px;
+    }
+
+    .barra-mobile{
+        background-color: #FFFFFF;
+
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        
+        width: 100%;
+        height: 54px;
+
+        justify-content: space-around;
+        align-items: center;
+        font-size: 25px;
+    }
+
+    .header-esquerda .barra-vertical,
+    .header-meio{
+        display: none;
+    }
+
+    .header-esquerda ion-icon{
+        padding-left: 20px;
+    }
+
+    .header-esquerda img{
+        padding-left: 215px;
+    }
+
+    .header-direita ion-icon.icone-desktop{
+        display: none;
+    }
 }
