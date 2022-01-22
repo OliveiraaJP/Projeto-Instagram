@@ -1,0 +1,275 @@
+
+body{
+    background-color: #E5E5E5;
+}
+
+.branco{
+    background-color: white;
+
+}
+
+/* -------------HEADER---------- */
+header {
+    background-color: cadetblue;
+    border-bottom: 1px solid #180404;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 54px;
+    min-height: 54px;
+    padding: 0 185px;
+}
+
+.header-esquerda {
+    display: flex;
+}
+
+.header-meio{
+    border: 1px solid #000;
+    width: 215px;
+    height: 28px;
+    color: #ad1717;
+    font-size: 12px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-direita {
+    font-size: 20px;
+    padding-right: 27px;
+
+}
+
+.logo-instagram {
+    color: rgb(240, 240, 240);
+    size: 50px;
+}
+.barra-vertical {
+    width: 1px;
+    height: 22px;
+    color: black;
+    background-color: black;
+    margin: 0 10px;
+}
+
+.icone-insta {
+    font-size: 24px;
+}
+
+/*------------------------------------------- */
+
+/*----------------CORPO DO SITE---------------*/
+
+.box-site {
+    display: flex;
+    
+    max-width: 934px;
+    margin: auto;
+}
+.container-esquerdo{
+    width: 614px; 
+}
+
+.container-direito{
+    width: 293px;
+}
+
+
+/* ----------------BOX ESQUERDO--------- */
+.container-postagens {
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    
+    width: 614px;
+    height: 749px;
+    margin-bottom: 60px;
+    margin-top: 24px;
+
+}
+
+.container-stories {
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    
+    width: 614px;
+    height: 118px;
+    margin-top: 88px;
+
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+/*---stories------------------------*/
+
+.container-stories img{
+    width: 56px;
+    height: 56px;
+    /* margin: 0px 8px; */
+    border-radius: 33px ;
+    
+}
+
+.box-stories{
+    width: 66px;
+    height: 66px;
+    background-image: url(/img/stories_background.jpg);
+    background-size: 66px;
+    margin-left: 14px;
+    margin-right: 13px;
+    text-align: center;
+
+    /* display: flex;
+    justify-content: center; */
+
+    font-size: 12px;
+    
+}
+
+
+/*---postagens-------------------------*/
+.top-foto{
+    height: 61px;
+    display: flex;
+    align-items: center;
+}
+.top-foto img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-left: 10px;
+}
+
+.top-foto p{
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.bolinhas{
+    font-size: 4px;
+    margin-left: 476px;
+}
+.foto img{
+    width: 614px;
+    height: 612px;
+}
+
+.bot-foto{
+    height: 76px;
+    
+
+}
+
+.bot-foto1{
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.primeiros-icones{
+    display: flex;
+}
+.primeiros-icones ion-icon{
+    margin-left: 12px;
+}
+.ultimo-icone{
+    margin-left: 470px;
+}
+
+.bot-foto2{
+    height: 50%;
+    
+    display: flex;
+    align-items: center;
+
+}
+
+.bot-foto2 img{
+    width: 20px;
+    border-radius: 10px;
+    margin-left: 13px;
+}
+
+.bot-foto2 p{
+    margin-left: 13px;
+}
+
+/*--------------BOX DIREITO--------------------------*/
+.box-lateral {
+    background-color: darkgreen;
+
+    position: fixed;
+    top: 88px;
+    right: auto;
+    
+    height: 400px;
+    width: 293px; 
+
+}
+.user{
+    color: #262626;
+    font-size: 500;
+    font-weight: bold;
+
+}
+
+.nome{
+    color: #8E8E8E;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+.lateral-top{
+    background-color: green;
+    height: 100px;
+    margin-left: 29px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.lateral-top img{
+    width: 56px;
+    height: 56px;
+    border-radius: 26px;
+}
+
+.texto p{
+    margin-left: 10px;
+    line-height: 16px;
+
+}
+
+.lateral-mid{
+    background-color: greenyellow;
+    height: 200px;
+    margin-left: 29px;
+}
+
+.lateral-bot{
+    background-color: yellowgreen;
+    height: 100px;
+    margin-left: 29px;
+
+    font-size: 11px;
+    line-height: 12.89px;
+    color: #C7C7C7;
+}
+
+@media (max-width:935px) {
+    .box-lateral {
+        display: none;
+    }
+}
+
