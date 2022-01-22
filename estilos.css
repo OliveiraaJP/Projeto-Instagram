@@ -1,6 +1,7 @@
 
 body{
-    background-color: #E5E5E5;
+    background-color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
 }
 
 .branco{
@@ -10,8 +11,8 @@ body{
 
 /* -------------HEADER---------- */
 header {
-    background-color: cadetblue;
-    border-bottom: 1px solid #180404;
+    border-bottom: 1px solid #DBDBDB;
+    background-color: #ffffff;
 
     position: fixed;
     left: 0;
@@ -25,6 +26,7 @@ header {
     height: 54px;
     min-height: 54px;
     padding: 0 185px;
+    z-index: 1;
 }
 
 .header-esquerda {
@@ -32,10 +34,10 @@ header {
 }
 
 .header-meio{
-    border: 1px solid #000;
+    border: 1px solid #DBDBDB;
     width: 215px;
     height: 28px;
-    color: #ad1717;
+    color: #979797;
     font-size: 12px;
     
     display: flex;
@@ -56,8 +58,8 @@ header {
 .barra-vertical {
     width: 1px;
     height: 22px;
-    color: black;
-    background-color: black;
+    color: #DBDBDB;
+    background-color: #DBDBDB;
     margin: 0 10px;
 }
 
@@ -106,7 +108,7 @@ header {
 
     display: flex;
     align-items: center;
-    overflow: hidden;
+    overflow-x: hidden;
 
 }
 /*---stories------------------------*/
@@ -204,22 +206,21 @@ header {
     margin-left: 13px;
 }
 
-/*--------------BOX DIREITO--------------------------*/
+/*--------------CONTAINER DIREITO--------------------------*/
 .box-lateral {
-    background-color: darkgreen;
 
     position: fixed;
     top: 88px;
     right: auto;
     
-    height: 400px;
     width: 293px; 
 
+    /* ---------------------------- */
 }
 .user{
     color: #262626;
     font-size: 500;
-    font-weight: bold;
+    font-weight: 500;
 
 }
 
@@ -230,8 +231,8 @@ header {
 
 }
 
+/* --------------------------------- */
 .lateral-top{
-    background-color: green;
     height: 100px;
     margin-left: 29px;
     display: flex;
@@ -250,15 +251,63 @@ header {
     line-height: 16px;
 
 }
-
+/* ------------------------------ */
 .lateral-mid{
-    background-color: greenyellow;
-    height: 200px;
+    height: 270px;
     margin-left: 29px;
 }
 
+.lateral-mid span {
+    font-size: 12px;
+}
+.sugestoes{
+    display: inline-block;
+    padding-bottom: 11px;
+
+}
+
+.espaço{
+    margin-right: 100px;
+}
+
+.mini-perfil{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 9px;
+}
+
+.mini-perfil img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+.mini-perfil span.user{
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    padding-left: 7px;
+}
+
+.mini-perfil span.nome{
+    display: inline-block;
+    position: absolute;
+    bottom: 3px;
+    padding-left: 7px;
+}
+
+.mini-perfil span.seguir-botao{
+    display: inline-block;
+    position: absolute;
+    right: 3px;
+    top: 10px;
+    color: #139EF2;
+    font-weight: 500;
+}
+
+/* -------------------------------- */
 .lateral-bot{
-    background-color: yellowgreen;
     height: 100px;
     margin-left: 29px;
 
@@ -267,9 +316,34 @@ header {
     color: #C7C7C7;
 }
 
+/* --------------------------------- */
 @media (max-width:935px) {
-    .box-lateral {
+
+    .container-direito{
         display: none;
     }
+
+    .container-esquerdo{
+        width: 100vw;
+    }
+
+    header{
+        padding: 0;
+    }
+    
+    
+
+    .container-stories{
+        margin: auto;
+        margin-top: 88px;
+        
+    }
+
+    .container-postagens{
+        margin: auto;
+        margin-bottom: 60px;
+        margin-top: 24px;
+        
 }
 
+}
