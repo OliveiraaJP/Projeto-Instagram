@@ -72,7 +72,8 @@ header {
 }
 
 .icone-insta {
-    font-size: 24px;
+    font-size: 20px;
+    margin-left: 8px;
 }
 
 /*------------------------------------------- */
@@ -100,7 +101,7 @@ header {
     border-radius: 3px;
     
     width: 614px;
-    height: 749px;
+    height: 906px;
     margin-bottom: 60px;
     margin-top: 24px;
 
@@ -130,14 +131,14 @@ header {
     top: 41px;
 }
 .seta{
-    font-size: 39px;
+    font-size: 31px;
     color: #ffffff;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
 }
 
 .container-stories img{
-    width: 58px;
-    height: 58px;
+    width: 56px;
+    height: 56px;
     /* margin: 0px 8px; */
     border-radius: 33px ;
     position: absolute;
@@ -248,6 +249,62 @@ header {
     margin-left: 13px;
 }
 
+
+.box-comentarios small{
+    color: rgba(var(--f52,142,142,142),1);
+    font-size: 15px;
+    display: block;
+}
+.comentario{
+    /* background-color: rgb(207, 171, 171); */
+    margin: 8px 0;
+    position: relative;   
+}
+
+.comentarios-comentarios{
+    margin: 0 15px;
+}
+.comentario span{
+    display: inline-block;
+    padding-right: 2px;
+}
+.comentario ion-icon{
+    position: absolute;
+    right: 0px;
+    top: auto;
+}
+.comentario-aba{
+    border-top: 1px solid #DBDBDB;
+    
+    height: 50px;
+
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comentario-aba ion-icon{
+    font-size: 30px;
+    padding-left: 10px;
+}
+.comentario-aba p{
+    color: #B2DFFC;
+    cursor: pointer;
+    padding-right: 10px;
+}
+.comentario-aba input{
+    width: 485px;
+    outline: none;
+    border: none;
+    height: 90%;
+}
+
+.comentario-aba p:hover{
+    transition: 300ms;
+    color: #0095F6;
+    
+}
 /*--------------CONTAINER DIREITO--------------------------*/
 .box-lateral {
 
@@ -384,9 +441,6 @@ header {
         padding: 0 5px;
     }
     
-    .barra-vertical{
-        display: none;
-    }
 
     .container-stories{
         margin: auto;
