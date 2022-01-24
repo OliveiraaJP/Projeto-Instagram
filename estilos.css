@@ -330,8 +330,21 @@ header {
     header{
         padding: 0;
     }
+
+    .header-esquerda img{
+        padding-left: 16px;
+    }
+    .header-esquerda ion-icon{
+        padding-left: 15px;
+    }
+
+    .header-direita ion-icon{
+        padding: 0 5px;
+    }
     
-    
+    .barra-vertical{
+        display: none;
+    }
 
     .container-stories{
         margin: auto;
